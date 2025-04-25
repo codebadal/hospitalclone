@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing - CareForYou</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #2575fc, #6a11cb);
+      color: #333;
+    }
+
+    .BrandName {
+      animation: ani 2s infinite;
+      font-size: 28px;
+    }
+
+    @keyframes ani {
+      0% { color: #096ff3; }
+      25% { color: rgb(15, 191, 240); }
+      50% { color: rgb(225, 13, 240); }
+      100% { color: rgb(19, 235, 203); }
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #696464;
+      padding: 10px 0;
+    }
+
+    .page-margin {
+      margin-left: 12%;
+    }
+
+    .nav-link {
+      margin-right: 120px;
+    }
+
+    .nav-link > a {
+      text-decoration: none;
+      color: aliceblue;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    .nav-link > a:hover {
+      color: rgb(75, 212, 152);
+    }
+
+    .nav-button {
+      background: #428df0;
+      color: aliceblue;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin-right: 12%;
+    }
+
+    .pricing-container {
+      max-width: 1200px;
+      margin: 60px auto;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      padding: 0 2rem;
+      animation: fadeUp 0.8s ease-out;
+    }
+
+    .pricing-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .pricing-card h3 {
+      font-size: 1.5rem;
+      color: #2575fc;
+      margin-bottom: 1rem;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .features {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .features li {
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+
+    .btn-select {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-select:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h3 class="BrandName page-margin">CareForYou</h3>
+    <div class="nav-link">
+      <a href="/project 2_hospital website landing page/">Home</a>
+      <a href="./createAcc.html">Sign-Up</a>
+      <a href="./pricing.html">Pricing</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./newPage.html">About Us</a>
+    </div>
+    <a href="./otherPages/getQuote.html" style="margin-right: 30px;">
+      <button class="nav-button">Get Quote Now</button>
+    </a>
+  </nav>
+
+  <div class="pricing-container">
+    <div class="pricing-card">
+      <h3>Basic Plan</h3>
+      <p class="price">$49/month</p>
+      <ul class="features">
+        <li>General Checkups</li>
+        <li>Monthly Consultations</li>
+        <li>Email Support</li>
+      </ul>
+      <button class="btn-select">Choose Plan</button>
+    </div>
+    <div class="pricing-card">
+      <h3>Standard Plan</h3>
+      <p class="price">$99/month</p>
+      <ul class="features">
+        <li>24/7 Doctor Access</li>
+        <li>Quarterly Tests</li>
+        <li>Priority Email Support</li>
+      </ul>
+      <button class="btn-select">Choose Plan</button>
+    </div>
+    <div class="pricing-card">
+      <h3>Premium Plan</h3>
+      <p class="price">$199/month</p>
+      <ul class="features">
+        <li>Dedicated Specialist</li>
+        <li>Home Visits</li>
+        <li>Phone & Chat Support</li>
+      </ul>
+      <button class="btn-select">Choose Plan</button>
+    </div>
+  </div>
+</body>
+</html>

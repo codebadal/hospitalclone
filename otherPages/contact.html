@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - CareForYou</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #43cea2, #185a9d);
+      color: #333;
+    }
+
+    .BrandName {
+      animation: ani 2s infinite;
+      font-size: 28px;
+    }
+
+    @keyframes ani {
+      0% { color: #096ff3; }
+      25% { color: rgb(15, 191, 240); }
+      50% { color: rgb(225, 13, 240); }
+      100% { color: rgb(19, 235, 203); }
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #696464;
+      padding: 10px 0;
+    }
+
+    .page-margin {
+      margin-left: 12%;
+    }
+
+    .nav-link {
+      margin-right: 120px;
+    }
+
+    .nav-link > a {
+      text-decoration: none;
+      color: aliceblue;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    .nav-link > a:hover {
+      color: rgb(75, 212, 152);
+    }
+
+    .nav-button {
+      background: #428df0;
+      color: aliceblue;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin-right: 12%;
+    }
+
+    .contact-container {
+      max-width: 700px;
+      margin: 60px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      animation: fadeIn 0.7s ease-out;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #185a9d;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    button.submit-btn {
+      background: linear-gradient(to right, #43cea2, #185a9d);
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button.submit-btn:hover {
+      background: linear-gradient(to right, #3cbfa5, #144f8b);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h3 class="BrandName page-margin">CareForYou</h3>
+    <div class="nav-link">
+      <a href="/project 2_hospital website landing page/index.html">Home</a>
+      <a href="/bootComp/createAcc.html">Sign-Up</a>
+      <a href="./pricing.html">Pricing</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./newPage.html">About Us</a>
+    </div>
+    <a href="./getQuote.html" style="margin-right: 30px;">
+      <button class="nav-button">Get Quote Now</button>
+    </a>
+  </nav>
+
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </div>
+</body>
+</html>
